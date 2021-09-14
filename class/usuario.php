@@ -125,6 +125,15 @@ public function Update($nome,$email,$desc,$id){
     ));
 }
 
+
+public function Delete($id){
+
+    $sql = new Sql();
+    $sql->query("DELETE FROM users  WHERE id=:id",array(
+        ":id"=>$id
+    ));
+}
+
 public function __toString(){
 
     return json_encode(array(

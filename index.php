@@ -51,9 +51,18 @@ echo json_encode($users);
 // ACTUALIZANDO DADOS
 
 
-$usuario = new Usuario();
+// $usuario = new Usuario();
 
-$usuario->Update("josemara","r@gmail.com","tecn",33);
+// $usuario->Update("josemara","r@gmail.com","tecn",33);
+
+
+// Deletar Usuario
+
+
+ $usuario = new Usuario();
+
+ $usuario->Delete(33);
+
 
 
 
