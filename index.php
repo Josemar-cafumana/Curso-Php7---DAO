@@ -34,14 +34,26 @@ echo json_encode($users);
 
 // Exemplo de validação de Login
 
+// $usuario = new Usuario();
+
+// $usuario->Login("Josemar Cafumana","rjosemar-cafumana@hotmail.com");
+
+// echo $usuario;
+
+
+// Insersão de Dados
+
+// $usuario = new Usuario();
+
+// $usuario->Insert("josemar","r@gmail.com","tecn");
+
+
+// ACTUALIZANDO DADOS
+
+
 $usuario = new Usuario();
 
-$usuario->Login("Josemar Cafumana","rjosemar-cafumana@hotmail.com");
-
-echo $usuario;
-
-
-
+$usuario->Update("josemara","r@gmail.com","tecn",33);
 
 
 

@@ -103,6 +103,28 @@ public function loadById($id){
 
 }
 
+public function Insert($nome,$email,$desc){
+
+    $sql = new Sql();
+
+    $sql->query("INSERT INTO users VALUES(null,:nome,:email,:descri)",array(
+        ":nome"=> $nome ,
+        ":email"=> $email,
+        ":descri"=> $desc
+    ));
+}
+
+public function Update($nome,$email,$desc,$id){
+
+    $sql = new Sql();
+    $sql->query("UPDATE users set nome=:nome,email=:email,description=:descr WHERE id=:id",array(
+        ":nome"=> $nome ,
+        ":email"=> $email,
+        ":descr"=> $desc,
+        ":id"=>$id
+    ));
+}
+
 public function __toString(){
 
     return json_encode(array(
